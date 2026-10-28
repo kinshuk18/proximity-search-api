@@ -1,0 +1,4 @@
+$ curl -s -w '\nHTTP %{http_code} in %{time_total}s\n' 'http://localhost:8080/search/?lat=0.5&long=0.5&cat=bank&rad=0.4&link=link.txt'
+{"ids":[4850,4948,4947,4753,5349,4648,5348,4451,5155,5452]}
+HTTP 200 in 0.245400s
+[exit=0]

@@ -86,3 +86,14 @@ Verified in this workspace with:
 which returned `4 passed, 1 warning in 0.25s`.
 
 The API smoke test also returned HTTP 200 for the default dataset query and produced a valid ID list.
+
+
+## Docker
+
+Requirements: Docker Engine 24+ and Docker Compose v2.
+Architecture: Two-tier stack with an Nginx reverse-proxy gateway routing to an internal FastAPI service.
+The API runs as non-root with read-only bind mounts on an isolated bridge network.
+Start: `docker compose up -d --build`
+Query: `curl "http://localhost:8000/search/?lat=0.5&long=0.5&cat=bank&rad=0.4&link=link.txt"`
+Stop: `docker compose down`
+Port override: `env HOST_PORT=8080 docker compose up -d`

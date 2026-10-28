@@ -1,0 +1,8 @@
+$ docker exec proximity-api id; docker exec proximity-api ls -l /app
+uid=1000(appuser) gid=1000(appuser) groups=1000(appuser)
+total 840
+-rw-rw-r-- 1 appuser appuser 532800 Oct  9 17:07 link.txt
+-rw-rw-r-- 1 appuser appuser 310176 Oct  9 17:07 locations.csv
+-rw-rw-r-- 1 appuser appuser   7187 Oct  9 20:41 main.py
+-rw-r--r-- 1 root    root        33 Oct 28 21:22 requirements.txt
+[exit=0]

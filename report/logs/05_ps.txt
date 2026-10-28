@@ -1,0 +1,8 @@
+$ docker compose ps; docker images --format "table {{.Repository}}\t{{.Tag}}\t{{.Size}}" | grep -E "REPOSITORY|proximity"
+NAME                IMAGE                    COMMAND                  SERVICE   CREATED         STATUS                   PORTS
+proximity-api       proximity-api:lab9       "uvicorn main:app --…"   api       9 seconds ago   Up 9 seconds (healthy)   8000/tcp
+proximity-gateway   proximity-gateway:lab9   "/docker-entrypoint.…"   gateway   9 seconds ago   Up 3 seconds             0.0.0.0:8080->80/tcp, [::]:8080->80/tcp
+REPOSITORY                           TAG                            SIZE
+proximity-api                        lab9                           136MB
+proximity-gateway                    lab9                           48.2MB
+[exit=0]

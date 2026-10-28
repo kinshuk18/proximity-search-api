@@ -1,0 +1,3 @@
+$ docker compose config -q && echo COMPOSE_CONFIG_VALID
+COMPOSE_CONFIG_VALID
+[exit=0]

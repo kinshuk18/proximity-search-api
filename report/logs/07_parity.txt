@@ -1,0 +1,5 @@
+$ compare container response vs local main.app
+container: [4850, 4948, 4947, 4753, 5349, 4648, 5348, 4451, 5155, 5452]
+local    : [4850, 4948, 4947, 4753, 5349, 4648, 5348, 4451, 5155, 5452]
+PARITY_OK
+[exit=0]

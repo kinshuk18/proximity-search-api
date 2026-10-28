@@ -1,0 +1,27 @@
+$ docker compose up -d --build 2>&1 | tail -n 25
+#19 [api 6/6] COPY --chown=appuser:appuser main.py locations.csv link.txt ./
+#19 CACHED
+
+#20 [api] exporting to image
+#20 exporting layers done
+#20 writing image sha256:a5cee71bc34910270c1f200817057931b5b9a447d7104dac9e926fb8d627de26 done
+#20 naming to docker.io/library/proximity-api:lab9 done
+#20 DONE 0.0s
+
+#21 [api] resolving provenance for metadata file
+#21 DONE 0.0s
+ Image proximity-gateway:lab9 Built 
+ Image proximity-api:lab9 Built 
+ Network proximity-search_backend Creating 
+ Network proximity-search_backend Created 
+ Container proximity-api Creating 
+ Container proximity-api Created 
+ Container proximity-gateway Creating 
+ Container proximity-gateway Created 
+ Container proximity-api Starting 
+ Container proximity-api Started 
+ Container proximity-api Waiting 
+ Container proximity-api Healthy 
+ Container proximity-gateway Starting 
+ Container proximity-gateway Started 
+[exit=0]

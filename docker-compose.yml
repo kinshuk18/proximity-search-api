@@ -1,0 +1,35 @@
+name: proximity-search
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: proximity-api:lab9
+    container_name: proximity-api
+    environment:
+      PYTHONUNBUFFERED: "1"
+      TZ: Asia/Kolkata
+    volumes:
+      - ./locations.csv:/app/locations.csv:ro
+      - ./link.txt:/app/link.txt:ro
+    expose:
+      - "8000"
+    networks:
+      - backend
+    restart: unless-stopped
+  gateway:
+    build:
+      context: ./nginx
+    image: proximity-gateway:lab9
+    container_name: proximity-gateway
+    ports:
+      - "${HOST_PORT:-8000}:80"
+    depends_on:
+      api:
+        condition: service_healthy
+    networks:
+      - backend
+    restart: unless-stopped
+networks:
+  backend:
+    driver: bridge

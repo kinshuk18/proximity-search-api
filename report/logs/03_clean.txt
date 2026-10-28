@@ -1,0 +1,6 @@
+$ docker compose down -v --rmi local --remove-orphans
+ Image proximity-gateway:lab9 Removing 
+ Image proximity-api:lab9 Removing 
+ Image proximity-gateway:lab9 Removed 
+ Image proximity-api:lab9 Removed 
+[exit=0]

@@ -1,0 +1,7 @@
+$ docker network ls --filter name=backend; docker network inspect proximity-search_backend --format "{{range .Containers}}{{.Name}} {{.IPv4Address}}{{println}}{{end}}"
+NETWORK ID     NAME                       DRIVER    SCOPE
+21a7562c31b0   proximity-search_backend   bridge    local
+proximity-gateway 172.20.0.3/16
+proximity-api 172.20.0.2/16
+
+[exit=0]

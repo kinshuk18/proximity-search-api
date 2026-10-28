@@ -1,0 +1,14 @@
+$ docker compose logs --no-color --tail=6
+proximity-api      | INFO:     Application startup complete.
+proximity-api      | INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+proximity-api      | INFO:     127.0.0.1:44474 - "GET /docs HTTP/1.1" 200 OK
+proximity-api      | INFO:     172.20.0.3:36546 - "GET /search/?lat=0.5&long=0.5&cat=bank&rad=0.4&link=link.txt HTTP/1.1" 200 OK
+proximity-api      | INFO:     172.20.0.3:36548 - "GET /search/?lat=0.5&long=0.5&cat=bank&rad=0.4&link=link.txt HTTP/1.1" 200 OK
+proximity-api      | INFO:     172.20.0.3:36552 - "GET /docs HTTP/1.1" 200 OK
+proximity-gateway  | 2026/10/28 16:08:49 [notice] 1#1: start worker process 38
+proximity-gateway  | 2026/10/28 16:08:49 [notice] 1#1: start worker process 39
+proximity-gateway  | 2026/10/28 16:08:49 [notice] 1#1: start worker process 40
+proximity-gateway  | 172.20.0.1 - - [28/Oct/2026:16:08:52 +0000] "GET /search/?lat=0.5&long=0.5&cat=bank&rad=0.4&link=link.txt HTTP/1.1" 200 59 "-" "curl/8.5.0" "-"
+proximity-gateway  | 172.20.0.1 - - [28/Oct/2026:16:08:52 +0000] "GET /search/?lat=0.5&long=0.5&cat=bank&rad=0.4&link=link.txt HTTP/1.1" 200 59 "-" "curl/8.5.0" "-"
+proximity-gateway  | 172.20.0.1 - - [28/Oct/2026:16:08:53 +0000] "GET /docs HTTP/1.1" 200 1023 "-" "curl/8.5.0" "-"
+[exit=0]

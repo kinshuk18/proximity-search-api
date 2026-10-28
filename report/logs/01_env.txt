@@ -1,0 +1,6 @@
+$ grep PRETTY_NAME /etc/os-release; uname -r; docker --version; docker compose version
+PRETTY_NAME="Ubuntu 24.04.4 LTS"
+7.0.0-38-generic
+Docker version 29.6.2, build dfc4efb
+Docker Compose version v5.3.1
+[exit=0]

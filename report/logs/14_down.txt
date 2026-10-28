@@ -1,0 +1,13 @@
+$ docker compose down; docker compose ps -a
+ Container proximity-gateway Stopping 
+ Container proximity-gateway Stopped 
+ Container proximity-gateway Removing 
+ Container proximity-gateway Removed 
+ Container proximity-api Stopping 
+ Container proximity-api Stopped 
+ Container proximity-api Removing 
+ Container proximity-api Removed 
+ Network proximity-search_backend Removing 
+ Network proximity-search_backend Removed 
+NAME      IMAGE     COMMAND   SERVICE   CREATED   STATUS    PORTS
+[exit=0]

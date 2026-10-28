@@ -1,0 +1,3 @@
+$ curl -s -o /dev/null -w 'GET /docs -> HTTP %{http_code}\n' http://localhost:8080/docs
+GET /docs -> HTTP 200
+[exit=0]

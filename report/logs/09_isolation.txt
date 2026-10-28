@@ -1,0 +1,4 @@
+$ echo "api published host ports: [$(docker port proximity-api)]"; docker compose port gateway 80
+api published host ports: []
+0.0.0.0:8080
+[exit=0]

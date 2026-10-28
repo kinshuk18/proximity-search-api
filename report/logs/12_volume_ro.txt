@@ -1,0 +1,4 @@
+$ docker exec proximity-api sh -c 'touch /app/link.txt && echo WRITABLE || echo READ_ONLY_MOUNT_OK'
+touch: cannot touch '/app/link.txt': Read-only file system
+READ_ONLY_MOUNT_OK
+[exit=0]
